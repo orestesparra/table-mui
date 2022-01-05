@@ -99,6 +99,7 @@ const ReactTableMUI = ({
   tableHeadColor,
   tableContainerColor,
   onContextMenu,
+  stickyHeader
 }: TableProps) => {
   const classes = useStyles({
     tableHeadColor,
@@ -219,9 +220,9 @@ const ReactTableMUI = ({
   // Render the UI for your table
   return (
     <>
-      <TableContainer classes={{ root: classes.tableContainerBorder }}>
+      <TableContainer classes={{ root: classes.tableContainerBorder }} style={stickyHeader ? { maxHeight: 250 } : {}}>
         {TableToolbar ? TableToolbar : null}
-        <Table size={"small"} {...getTableProps()}>
+        <Table stickyHeader={stickyHeader} size={"small"} {...getTableProps()}>
           {hideHeader ? null : (
             <TableHead classes={{ root: classes.tableHeadColor }}>
               {headerGroups.map((headerGroup: any, index: number) => (
