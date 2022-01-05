@@ -1,6 +1,6 @@
 {
-  "name": "react-table-mui-custom",
-  "version": "0.1.15",
+  "name": "table-mui",
+  "version": "0.1.1",
   "description": "react-table with MUI",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.esm.js",
