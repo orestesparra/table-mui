@@ -1,0 +1,66 @@
+{
+  "name": "react-table-mui-custom",
+  "version": "0.1.14",
+  "description": "react-table with MUI",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orestesparra/react-table-mui-custom.git"
+  },
+  "keywords": [
+    "react-table",
+    "mui",
+    "material-ui",
+    "react",
+    "table",
+    "mui"
+  ],
+  "author": "Orestes Parra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orestesparra/react-table-mui-custom/issues"
+  },
+  "homepage": "https://github.com/orestesparra/react-table-mui-custom#readme",
+  "dependencies": {
+    "react-table": "^7.7.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^16.14.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.2",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@types/react": "^17.0.38",
+    "@types/react-table": "^7.7.9",
+    "babel-loader": "^8.2.3",
+    "postcss": "^8.4.5",
+    "react": "^17.0.2",
+    "react-dom": "^16.14.0",
+    "rollup": "^2.63.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "typescript": "^4.5.4"
+  }
+}
