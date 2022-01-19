@@ -1,6 +1,6 @@
 {
   "name": "table-mui",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "react-table with MUI",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.esm.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orestesparra/react-table-mui-custom.git"
+    "url": "git+https://github.com/orestesparra/table-mui.git"
   },
   "keywords": [
     "react-table",
@@ -29,9 +29,9 @@
   "author": "Orestes Parra",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/orestesparra/react-table-mui-custom/issues"
+    "url": "https://github.com/orestesparra/table-mui/issues"
   },
-  "homepage": "https://github.com/orestesparra/react-table-mui-custom#readme",
+  "homepage": "https://github.com/orestesparra/table-mui#readme",
   "dependencies": {
     "react-table": "^7.7.0"
   },

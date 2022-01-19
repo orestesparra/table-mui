@@ -34,4 +34,6 @@ export interface TableProps {
   tableContainerColor?: string;
   onContextMenu?: (row: any, event?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   stickyHeader?: boolean
+  manualOrderById?: string
+  manualDescendingSort?:boolean
 }

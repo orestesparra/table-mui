@@ -99,7 +99,9 @@ const ReactTableMUI = ({
   tableHeadColor,
   tableContainerColor,
   onContextMenu,
-  stickyHeader
+  stickyHeader,
+  manualOrderById,
+  manualDescendingSort
 }: TableProps) => {
   const classes = useStyles({
     tableHeadColor,
@@ -131,7 +133,7 @@ const ReactTableMUI = ({
       columns,
       data,
       defaultColumn,
-      initialState: { hiddenColumns: ["id"], pageSize: defaultPageSize },
+      initialState: { hiddenColumns: ["id"], pageSize: defaultPageSize,sortBy: manualSortBy ? [{ id: manualOrderById, desc: manualDescendingSort }] : [] },
       autoResetPage: false,
       manualPagination: manualPagination,
       pageCount: totalDataNumber,
@@ -253,7 +255,9 @@ const ReactTableMUI = ({
                                   MouseEvent
                                 >
                               ) => {
-                                gotoPage(0);
+                                if (!manualSortBy) {
+                                  gotoPage(0);
+                                }
                                 if (column.isSortedDesc) {
                                   onSorted && onSorted("", "", pageSize); //column.id
                                 } else if (column.isSortedDesc === false) {
